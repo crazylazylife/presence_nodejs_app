@@ -176,12 +176,13 @@
   top: 80px;
   left: 10px;
   width: 30%;
-  height: 60px;
+  height: 55px;
   position: absolute;
-  border-radius: 30px;
-  border: 2px solid #fff;
+  border: none;
   background: transparent;
   box-sizing: border-box;
+  border-radius: 20px;
+  border: 2px solid #fff;
   display: flex;
   justify-content: left;
   overflow: scroll;
@@ -192,10 +193,11 @@
 }
 
 #online_list img {
-  padding: 8px;
+  padding: 3px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  border: 1px solid #fff;
 }
 
 #online_list img:hover {

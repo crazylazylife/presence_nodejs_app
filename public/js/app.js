@@ -18,6 +18,13 @@ firebase
     console.log(error.message);
   });
 //firebase.analytics();
+var avatarList = {
+  1: "https://api.adorable.io/avatars/60/abott@adorable.png",
+  2: "https://api.adorable.io/avatars/60/qetn5k@adorable.io.png",
+  3: "https://api.adorable.io/avatars/60/cool@adorable.io.png",
+  4: "https://api.adorable.io/avatars/60/rjkberu@adorable.io.png",
+  5: "https://api.adorable.io/avatars/60/akdrgoeir@adorable.io.png",
+};
 
 firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION);
 /*
@@ -157,7 +164,8 @@ function showlist(doc, i) {
   if (status.textContent === "online") {
     time.style.display = "none";
     image.setAttribute("userid", doc.id);
-    image.src = "../images/profile_image.jpg";
+    var k = Math.floor(Math.random() * 5) + 1;
+    image.src = avatarList[k];
     image.title = doc.data().Username;
     onlineList.appendChild(image);
   }
