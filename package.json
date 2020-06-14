@@ -1,0 +1,18 @@
+{
+  "name": "navigus_assignment1",
+  "version": "1.0.0",
+  "description": "for navigus coding round 2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Himadri Sankar Chatterjee",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "firebase": "^7.15.1",
+    "firebase-tools": "^8.4.2"
+  },
+  "devDependencies": {}
+}

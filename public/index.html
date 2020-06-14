@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!--script
+      src="https://code.jquery.com/jquery-3.3.1.slim.js"
+      integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+      crossorigin="anonymous"
+    ></script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-firestore.js"></script>
+    <script src="./js/app.js"></script>
+    <title>Assignment 1 - Navigus</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="form-content">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="button-toggle" onclick="signin()">
+            Sign In
+          </button>
+          <button type="button" class="button-toggle" onclick="signup()">
+            Sign Up
+          </button>
+        </div>
+        <form class="input-group" id="signin">
+          <input
+            type="email"
+            class="input-field"
+            placeholder="Email Address"
+            id="signin_email"
+            required
+          />
+          <input
+            type="password"
+            class="input-field"
+            placeholder="Password"
+            id="signin_password"
+            required
+          />
+          <button
+            class="submit-btn"
+            id="signin-button"
+            onclick="login(); return false;"
+          >
+            Sign In
+          </button>
+        </form>
+        <div class="input-group" id="signup">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Username"
+            id="signup_username"
+            required
+          />
+          <input
+            type="email"
+            class="input-field"
+            placeholder="Email Address"
+            id="signup_email"
+            required
+          />
+          <input
+            type="password"
+            class="input-field"
+            placeholder="Password"
+            id="signup_password"
+            required
+          />
+          <button
+            type="submit"
+            class="submit-btn"
+            id="signup-button"
+            onclick="register(); return false;"
+          >
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </div>
+    <script>
+      var x = document.getElementById("signin");
+      var y = document.getElementById("signup");
+      var z = document.getElementById("btn");
+
+      function signup() {
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+      }
+
+      function signin() {
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0";
+      }
+    </script>
+  </body>
+</html>
