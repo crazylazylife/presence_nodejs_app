@@ -6,9 +6,9 @@ Link to online hsoted app: navigusassignment1.herokuapp.com
 The main page consists a link to my Medium Blog.
 
 ### The Login Page: 
-![Login Page](https://github.com/crazylazylife/presence_nodejs_app/login_page.png?raw=true)
+![Login Page](login_page.png)
 
 ### The main page
-![Login Page](https://github.com/crazylazylife/presence_nodejs_app/main_page.png?raw=true)
+![Main Page](main_page.png)
 
 Instruction: Please remember to "Sign Out" to exit the main page.
