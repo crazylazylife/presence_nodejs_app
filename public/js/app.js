@@ -47,7 +47,7 @@ function login() {
 
   console.log("Logging in...");
   console.log(userEmail);
-  console.log(userPass);
+  //console.log(userPass);
   firebase
     .auth()
     .signInWithEmailAndPassword(userEmail, userPass)
